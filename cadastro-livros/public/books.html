@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livros Cadastrados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+    #book-list {
+      list-style-type: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    #book-list li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .back-button {
+      display: block;
+      width: max-content;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .back-button:hover {
+      background-color: #45a049;
+    }
+    .delete-button {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .delete-button:hover {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <h1>Livros Cadastrados</h1>
+  <ul id="book-list"></ul>
+  <a href="./index.html" class="back-button">Voltar para Cadastro</a>
+  <script src="./script.js"></script>
+</body>
+</html>
